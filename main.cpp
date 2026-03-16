@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 
-using namespace std;
+using namespace std; //เอาขึ้นก่อน
 
 #include "Time.h"
 
