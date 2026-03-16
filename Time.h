@@ -27,6 +27,28 @@ struct Time subtract (struct Time t2, struct Time t1){
     t3.s = t3all % 60;          
     
     return t3;
+    /*struct Time subtract (struct Time t2,struct Time t1){
+    struct Time t3;
+    if((t2.s-t1.s)<0){
+        --t2.m;
+        t3.s = (t2.s-t1.s)+60;
+    }
+    else t3.s = t2.s-t1.s;
+
+    if((t2.m-t1.m)<0){
+        --t2.h;
+        t3.m = (t2.m-t1.m)+60;
+    }
+    else t3.m = t2.m-t1.m;
+
+    if((t2.h-t1.h)<0){
+        t3.h = (t2.h-t1.h)+24;
+    }
+    else t3.h = t2.h-t1.h;
+
+    return t3;
+}
+*/
 }
 
 
